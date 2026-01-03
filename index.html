@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>マルチシンボル損益計算機</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- メインロジックファイルを読み込む -->
+  <script src="main.js" defer></script>
+</head>
+<body class="bg-slate-100 p-8">
+
+  <div class="max-w-md mx-auto bg-white p-6 rounded-lg shadow-md border border-slate-200">
+    <h1 class="text-xl font-bold mb-6 text-slate-800 border-b pb-2">損益計算ツール</h1>
+    
+    <div class="space-y-4">
+      <!-- シンボル選択 -->
+      <div>
+        <label class="block text-sm font-medium text-slate-700 mb-1">シンボル</label>
+        <select id="symbol-select" class="w-full bg-slate-50 border border-slate-300 rounded-md p-2 text-slate-800 focus:ring-2 focus:ring-blue-500 outline-none">
+          <option value="EURUSD">EURUSD (Euro vs US Dollar)</option>
+          <option value="USDJPY" selected>USDJPY (US Dollar vs Yen)</option>
+          <option value="USDCHF">USDCHF (US Dollar vs Swiss Franc)</option>
+          <option value="US30">US30 (Dow Jones)</option>
+          <option value="AUS200">AUS200 (Australia 200)</option>
+          <option value="XAUUSD">XAUUSD (Gold vs US Dollar)</option>
+        </select>
+      </div>
+
+      <!-- ロット入力 -->
+      <div>
+        <label class="block text-sm font-medium text-slate-700 mb-1">ロット数</label>
+        <input type="number" id="lot-input" value="0.01" step="0.01" class="w-full bg-slate-50 border border-slate-300 rounded-md p-2 font-mono text-slate-800">
+      </div>
+
+      <!-- ポイント入力 -->
+      <div>
+        <label class="block text-sm font-medium text-slate-700 mb-1">獲得ポイント (Point)</label>
+        <input type="number" id="point-input" value="100" class="w-full bg-slate-50 border border-slate-300 rounded-md p-2 font-mono text-slate-800">
+        <p class="text-[10px] text-slate-500 mt-1">
+          ※ ポイントの定義: USDJPY(3桁)なら1ポイント=0.001、EURUSD(5桁)なら1ポイント=0.00001
+        </p>
+      </div>
+
+      <button id="calc-btn" class="w-full bg-blue-600 text-white py-3 rounded-md font-bold hover:bg-blue-700 transition-colors shadow-sm">
+        損益を計算する
+      </button>
+
+      <!-- 結果表示エリア -->
+      <div id="result-area" class="mt-6 p-4 bg-blue-50 rounded-lg border border-blue-100">
+        <p class="text-xs text-blue-600 font-bold uppercase tracking-wider">推定損益額</p>
+        <p id="profit-jpy" class="text-3xl font-mono font-bold text-blue-800 my-1">¥-</p>
+        <p class="text-[10px] text-blue-500 mt-2">
+          <span id="calc-detail">---</span>
+        </p>
+      </div>
+    </div>
+
+    <footer class="mt-8 text-center text-[10px] text-slate-400 leading-relaxed">
+      各シンボルの計算仕様は設定データに基づいています。<br>
+      外貨損益の円換算には最新の市場レートを使用します。
+    </footer>
+  </div>
+
+</body>
+</html>
