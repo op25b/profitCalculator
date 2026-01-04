@@ -4,22 +4,31 @@
 const symbols = [
   { symbol: 'AUDJPY', digit: 3, contactSize: 100000, profitCurrency: 'JPY' },
   { symbol: 'AUDUSD', digit: 5, contactSize: 100000, profitCurrency: 'USD' },
-  { symbol: 'AUS200', digit: 1, contactSize: 1, profitCurrency: 'AUD' },
-  { symbol: 'BTCUSD', digit: 2, contactSize: 1, profitCurrency: 'USD' },
+  { symbol: 'AUS200', digit: 1, contactSize:      1, profitCurrency: 'AUD' },
+  { symbol: 'BTCUSD', digit: 2, contactSize:      1, profitCurrency: 'USD' },
   { symbol: 'CADJPY', digit: 3, contactSize: 100000, profitCurrency: 'JPY' },
   { symbol: 'CHFJPY', digit: 3, contactSize: 100000, profitCurrency: 'JPY' },
-  { symbol: 'CN500', digit: 1, contactSize: 1, profitCurrency: 'USD' },
-  { symbol: 'ETHUSD', digit: 2, contactSize: 1, profitCurrency: 'USD' },
+  { symbol:  'CN500', digit: 1, contactSize:      1, profitCurrency: 'USD' },
+  { symbol: 'ETHUSD', digit: 2, contactSize:      1, profitCurrency: 'USD' },
+  { symbol:  'EU500', digit: 1, contactSize:      1, profitCurrency: 'EUR' },
   { symbol: 'EURAUD', digit: 5, contactSize: 100000, profitCurrency: 'AUD' },
   { symbol: 'EURCAD', digit: 5, contactSize: 100000, profitCurrency: 'CAD' },
   { symbol: 'EURCHF', digit: 5, contactSize: 100000, profitCurrency: 'CHF' },
   { symbol: 'EURGBP', digit: 5, contactSize: 100000, profitCurrency: 'GBP' },
   { symbol: 'EURJPY', digit: 3, contactSize: 100000, profitCurrency: 'JPY' },
+  { symbol: 'EURNZD', digit: 5, contactSize: 100000, profitCurrency: 'NZD' },
   { symbol: 'EURUSD', digit: 5, contactSize: 100000, profitCurrency: 'USD' },
-  { symbol: 'US30', digit: 1, contactSize: 1, profitCurrency: 'USD' },
+  { symbol:   'FR40', digit: 1, contactSize:      1, profitCurrency: 'EUR' },
+  { symbol: 'GBPAUD', digit: 5, contactSize: 100000, profitCurrency: 'AUD' },
+  { symbol: 'GBPCAD', digit: 5, contactSize: 100000, profitCurrency: 'CAD' },
+  { symbol: 'GBPCHF', digit: 5, contactSize: 100000, profitCurrency: 'CHF' },
+  { symbol: 'GBPJPY', digit: 3, contactSize: 100000, profitCurrency: 'JPY' },
+  { symbol: 'GBPNZD', digit: 5, contactSize: 100000, profitCurrency: 'NZD' },
+  { symbol: 'GBPUSD', digit: 5, contactSize: 100000, profitCurrency: 'USD' },
+  { symbol:   'US30', digit: 1, contactSize:      1, profitCurrency: 'USD' },
   { symbol: 'USDCHF', digit: 5, contactSize: 100000, profitCurrency: 'CHF' },
   { symbol: 'USDJPY', digit: 3, contactSize: 100000, profitCurrency: 'JPY' },
-  { symbol: 'XAUUSD', digit: 2, contactSize: 100, profitCurrency: 'USD' },
+  { symbol: 'XAUUSD', digit: 2, contactSize:    100, profitCurrency: 'USD' },
 ];
 
 const symbolSelect = document.getElementById('symbol-select');
@@ -46,7 +55,7 @@ function initSymbolSelect() {
     option.value = config.symbol;
     option.textContent = config.symbol;
     // Default to USDJPY if present
-    if (config.symbol === 'USDJPY') {
+    if (config.symbol === 'EURUSD') {
       option.selected = true;
     }
     symbolSelect.appendChild(option);
