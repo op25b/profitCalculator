@@ -2,9 +2,19 @@
  * Symbols information based on the provided CSV data
  */
 const symbols = [
+  { symbol: 'AUDJPY', digit: 3, contactSize: 100000, profitCurrency: 'JPY' },
+  { symbol: 'AUDUSD', digit: 5, contactSize: 100000, profitCurrency: 'USD' },
   { symbol: 'AUS200', digit: 1, contactSize: 1, profitCurrency: 'AUD' },
   { symbol: 'BTCUSD', digit: 2, contactSize: 1, profitCurrency: 'USD' },
+  { symbol: 'CADJPY', digit: 3, contactSize: 100000, profitCurrency: 'JPY' },
+  { symbol: 'CHFJPY', digit: 3, contactSize: 100000, profitCurrency: 'JPY' },
+  { symbol: 'CN500', digit: 1, contactSize: 1, profitCurrency: 'USD' },
+  { symbol: 'ETHUSD', digit: 2, contactSize: 1, profitCurrency: 'USD' },
+  { symbol: 'EURAUD', digit: 5, contactSize: 100000, profitCurrency: 'AUD' },
+  { symbol: 'EURCAD', digit: 5, contactSize: 100000, profitCurrency: 'CAD' },
+  { symbol: 'EURCHF', digit: 5, contactSize: 100000, profitCurrency: 'CHF' },
   { symbol: 'EURGBP', digit: 5, contactSize: 100000, profitCurrency: 'GBP' },
+  { symbol: 'EURJPY', digit: 3, contactSize: 100000, profitCurrency: 'JPY' },
   { symbol: 'EURUSD', digit: 5, contactSize: 100000, profitCurrency: 'USD' },
   { symbol: 'US30', digit: 1, contactSize: 1, profitCurrency: 'USD' },
   { symbol: 'USDCHF', digit: 5, contactSize: 100000, profitCurrency: 'CHF' },
