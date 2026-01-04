@@ -2,13 +2,14 @@
  * Symbols information based on the provided CSV data
  */
 const symbols = [
-  { symbol: 'EURUSD', digit: 5, contactSize: 100000, profitCurrency: 'USD' },
-  { symbol: 'USDJPY', digit: 3, contactSize: 100000, profitCurrency: 'JPY' },
-  { symbol: 'USDCHF', digit: 5, contactSize: 100000, profitCurrency: 'CHF' },
-  { symbol: 'US30', digit: 1, contactSize: 1, profitCurrency: 'USD' },
   { symbol: 'AUS200', digit: 1, contactSize: 1, profitCurrency: 'AUD' },
+  { symbol: 'BTCUSD', digit: 2, contactSize: 1, profitCurrency: 'USD' },
+  { symbol: 'EURGBP', digit: 5, contactSize: 100000, profitCurrency: 'GBP' },
+  { symbol: 'EURUSD', digit: 5, contactSize: 100000, profitCurrency: 'USD' },
+  { symbol: 'US30', digit: 1, contactSize: 1, profitCurrency: 'USD' },
+  { symbol: 'USDCHF', digit: 5, contactSize: 100000, profitCurrency: 'CHF' },
+  { symbol: 'USDJPY', digit: 3, contactSize: 100000, profitCurrency: 'JPY' },
   { symbol: 'XAUUSD', digit: 2, contactSize: 100, profitCurrency: 'USD' },
-  { symbol: 'EURGBP', digit: 5, contactSize: 100000, profitCurrency: 'GBP' }
 ];
 
 const symbolSelect = document.getElementById('symbol-select');
