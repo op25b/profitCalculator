@@ -2,10 +2,13 @@
  * Symbols information based on the provided CSV data
  */
 const symbols = [
+  { symbol: 'AUDCHF', digit: 5, contactSize: 100000, profitCurrency: 'CHF' },
   { symbol: 'AUDJPY', digit: 3, contactSize: 100000, profitCurrency: 'JPY' },
+  { symbol: 'AUDNZD', digit: 5, contactSize: 100000, profitCurrency: 'NZD' },
   { symbol: 'AUDUSD', digit: 5, contactSize: 100000, profitCurrency: 'USD' },
-  { symbol: 'AUS200', digit: 1, contactSize:      1, profitCurrency: 'AUD' },
+  { symbol:  'AU200', digit: 1, contactSize:      1, profitCurrency: 'AUD' },
   { symbol: 'BTCUSD', digit: 2, contactSize:      1, profitCurrency: 'USD' },
+  { symbol: 'CADCHF', digit: 5, contactSize: 100000, profitCurrency: 'CHF' },
   { symbol: 'CADJPY', digit: 3, contactSize: 100000, profitCurrency: 'JPY' },
   { symbol: 'CHFJPY', digit: 3, contactSize: 100000, profitCurrency: 'JPY' },
   { symbol:  'CN500', digit: 1, contactSize:      1, profitCurrency: 'USD' },
@@ -25,10 +28,22 @@ const symbols = [
   { symbol: 'GBPJPY', digit: 3, contactSize: 100000, profitCurrency: 'JPY' },
   { symbol: 'GBPNZD', digit: 5, contactSize: 100000, profitCurrency: 'NZD' },
   { symbol: 'GBPUSD', digit: 5, contactSize: 100000, profitCurrency: 'USD' },
+  { symbol:  'JP225', digit: 1, contactSize:    100, profitCurrency: 'JPY' },
+  { symbol: 'NZDCHF', digit: 5, contactSize: 100000, profitCurrency: 'CHF' },
+  { symbol: 'NZDJPY', digit: 3, contactSize: 100000, profitCurrency: 'JPY' },
+  { symbol: 'NZDUSD', digit: 5, contactSize: 100000, profitCurrency: 'USD' },
+  { symbol:   'SW20', digit: 1, contactSize:      1, profitCurrency: 'CHF' },
+  { symbol:  'UK100', digit: 1, contactSize:      1, profitCurrency: 'GBP' },
+  { symbol:  'US100', digit: 1, contactSize:      1, profitCurrency: 'USD' },
+  { symbol: 'US2000', digit: 1, contactSize:      1, profitCurrency: 'USD' },
+  { symbol:  'US500', digit: 1, contactSize:      1, profitCurrency: 'USD' },
   { symbol:   'US30', digit: 1, contactSize:      1, profitCurrency: 'USD' },
+  { symbol: 'USDCAD', digit: 5, contactSize: 100000, profitCurrency: 'CAD' },
   { symbol: 'USDCHF', digit: 5, contactSize: 100000, profitCurrency: 'CHF' },
   { symbol: 'USDJPY', digit: 3, contactSize: 100000, profitCurrency: 'JPY' },
+  { symbol: 'XAGUSD', digit: 3, contactSize:   5000, profitCurrency: 'USD' },
   { symbol: 'XAUUSD', digit: 2, contactSize:    100, profitCurrency: 'USD' },
+  { symbol: 'XRPUSD', digit: 4, contactSize:  10000, profitCurrency: 'USD' },
 ];
 
 const symbolSelect = document.getElementById('symbol-select');
